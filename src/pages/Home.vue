@@ -5,20 +5,20 @@
       <div class="unified-overlay" aria-hidden="true"></div>
       <div class="unified-grid" aria-hidden="true"></div>
       <div class="unified-inner container">
-        <h1 class="hero-title tight">育创湾 · 全流程技术转移与成果转化平台</h1>
-        <p class="hero-sub">连接企业需求与高校/科研成果，提供贯穿“诊断—匹配—验证—合规—资本—落地运营”的一体化服务。</p>
-        <p class="hero-sub">以数据与专家网络驱动决策，缩短创新转化路径，提升成果落地效率。</p>
+        <h1 class="hero-title tight">{{ t('home.hero.title') }}</h1>
+        <p class="hero-sub">{{ t('home.hero.sub1') }}</p>
+        <p class="hero-sub">{{ t('home.hero.sub2') }}</p>
         <div class="stats">
-          <div class="stat-card" v-for="s in stats" :key="s.label">
+          <div class="stat-card" v-for="s in stats" :key="s.key">
             <div class="val" v-countup="s.value">0</div>
-            <div class="lab">{{ s.label }}</div>
+            <div class="lab">{{ t(s.labelKey) }}</div>
           </div>
         </div>
-        <h2 class="section-heading compact">核心服务</h2>
+        <h2 class="section-heading compact">{{ t('home.core.heading') }}</h2>
         <div class="core-grid">
-          <div v-for="f in features" :key="f.title" class="core-card" v-tilt>
-            <h3>{{ f.title }}</h3>
-            <p>{{ f.desc }}</p>
+          <div v-for="f in features" :key="f.key" class="core-card" v-tilt>
+            <h3>{{ t(f.titleKey) }}</h3>
+            <p>{{ t(f.descKey) }}</p>
           </div>
         </div>
       </div>
@@ -26,18 +26,20 @@
   </div>
 </template>
 <script setup lang="ts">
+import { t } from '../i18n'
+
 const stats = [
-  { label:'专家网络', value:500 },
-  { label:'双一流高校直连', value:1 },
-  { label:'全链条服务环节', value:6 },
+  { key: 'experts', labelKey:'home.stats.experts', value:500 },
+  { key: 'direct', labelKey:'home.stats.direct', value:1 },
+  { key: 'fullchain', labelKey:'home.stats.fullchain', value:6 },
 ]
 const features = [
-  { title:'需求诊断', desc:'梳理痛点、评估技术可行性与投入产出预期。' },
-  { title:'技术匹配', desc:'多源成果库+专家筛选，精准对接最优技术方向。' },
-  { title:'PoC / 中试', desc:'验证关键参数，降低规模化落地的不确定性。' },
-  { title:'知识产权与合规', desc:'专利评估、组合布局及政策/认证合规辅导。' },
-  { title:'资本助力', desc:'项目路演、投融资撮合与产业基金协同。' },
-  { title:'园区与运营', desc:'载体空间、政策集成与成果持续运营支持。' },
+  { key:'need', titleKey:'home.core.need', descKey:'home.core.need.desc' },
+  { key:'match', titleKey:'home.core.match', descKey:'home.core.match.desc' },
+  { key:'poc', titleKey:'home.core.poc', descKey:'home.core.poc.desc' },
+  { key:'ip', titleKey:'home.core.ip', descKey:'home.core.ip.desc' },
+  { key:'capital', titleKey:'home.core.capital', descKey:'home.core.capital.desc' },
+  { key:'operation', titleKey:'home.core.operation', descKey:'home.core.operation.desc' },
 ]
 </script>
 

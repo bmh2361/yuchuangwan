@@ -1,10 +1,14 @@
 <template>
   <footer class="footer-lite">
     <div class="container footer-inner">
-      <p class="copyright">© 2025 育创湾 · 技术转移与成果转化平台</p>
+      <p class="copyright">{{ t('footer.copyright') }}</p>
     </div>
   </footer>
 </template>
+
+<script setup lang="ts">
+import { t } from '../i18n'
+</script>
 
 <style scoped>
 .footer-lite{padding:34px 0 44px;background:linear-gradient(180deg,rgba(255,255,255,.85),rgba(255,255,255,.78));backdrop-filter:saturate(160%) blur(10px);border-top:1px solid #dbe4f2;position:relative}
