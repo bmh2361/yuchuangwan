@@ -7,17 +7,15 @@
       </a>
       <nav class="nav">
         <RouterLink to="/">首页</RouterLink>
-        <RouterLink to="/about">公司介绍</RouterLink>
-        <RouterLink to="/services">服务内容</RouterLink>
-        <RouterLink to="/projects">服务项目</RouterLink>
-        <RouterLink to="/support">服务支持</RouterLink>
-        <RouterLink to="/clients">合作伙伴</RouterLink>
+        <RouterLink to="/about">关于我们</RouterLink>
+        <RouterLink to="/services">服务体系</RouterLink>
+        <RouterLink to="/tech">技术成果库 / 科研对接</RouterLink>
+        <RouterLink to="/cases">产业合作 / 成功案例</RouterLink>
+        <RouterLink to="/fund">基金与投研</RouterLink>
+        <RouterLink to="/news">新闻与活动</RouterLink>
+        <RouterLink to="/policy">政策支持 / 政府合作</RouterLink>
         <RouterLink to="/contact">联系我们</RouterLink>
       </nav>
-      <div class="hotline">
-        <span class="hotline-label">咨询热线</span>
-        <a href="tel:075582104920">0755-8210 4920</a>
-      </div>
     </div>
   </header>
   <main>
