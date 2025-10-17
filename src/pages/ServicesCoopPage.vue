@@ -3,8 +3,8 @@
     <!-- ① 页首 Hero -->
     <section class="coop-hero container" v-reveal>
       <div class="hero-bg" aria-hidden="true"></div>
-      <h1 class="title">从科研到产业，从中国到世界</h1>
-      <p class="lead">育创湾连接高校科研与企业需求，搭建中外科技成果转化的桥梁。我们以企业的真实需求为起点，汇聚国内外“双一流”高校及科研机构资源，推动技术跨区域、跨机构、跨产业链的高效转移与协同创新。</p>
+  <h1 class="title">企业导向的技术转移与落地</h1>
+  <p class="lead">面向企业真实业务场景，以“问题定义—方案比选—多方评审—PoC/中试”的标准化路径推动技术落地；以数据与专家网络缩短决策周期，提升投入产出比。</p>
       <div class="badges">
         <span class="badge" v-tilt>精准匹配｜国内外科研成果</span>
         <span class="badge" v-tilt>深度协作｜高校 × 企业 × 园区</span>
@@ -15,8 +15,8 @@
     <!-- ② 全球化的科研资源网络 -->
     <section class="coop-global container" v-reveal>
       <div class="sec-head">
-        <h2>全球化的科研资源网络</h2>
-        <p>育创湾依托长三角核心高校实验室、国家重点实验室及英国顶尖科研院所，建立面向国际的科研成果与技术团队数据库。这一网络覆盖能源、先进制造、AI与智能传感、生物医药、新材料等方向，实现“<b>中国原创 + 海外成熟 + 场景共研</b>”的技术联合开发机制。</p>
+  <h2>全球化科研资源与专家库</h2>
+  <p>依托长三角重点高校与英国/欧洲科研网络，持续沉淀可对接的成果与团队画像，覆盖能源与制造、AI与智能传感、生物健康、新材料等方向，面向企业场景进行工程化筛选与组合。</p>
       </div>
   <div class="world-bg" aria-hidden="true"></div>
       <div class="g3">
@@ -47,8 +47,8 @@
     <!-- ③ 企业驱动的合作逻辑 -->
     <section class="coop-enterprise container" v-reveal>
       <div class="sec-head">
-        <h2>企业驱动的合作逻辑</h2>
-        <p>育创湾以企业需求驱动为核心逻辑，从痛点出发反向定义科研方向。</p>
+  <h2>企业驱动的合作逻辑</h2>
+  <p>从业务痛点出发，形成需求与技术画像；基于证据的评审机制与明确的里程碑计划，控制节奏与风险，确保每一步都可验证、可交付。</p>
       </div>
       <div class="timeline">
         <div class="step">
@@ -78,8 +78,8 @@
     <!-- ④ 高校协同的转化路径 -->
     <section class="coop-university container" v-reveal>
       <div class="sec-head">
-        <h2>高校协同的转化路径</h2>
-        <p>针对高校科研成果，育创湾提供全流程赋能服务。</p>
+  <h2>高校协同的转化路径</h2>
+  <p>围绕校内流程、IP与收益机制，提供从专利布局、确权与合规到方案设计与落地的端到端支持。</p>
       </div>
       <div class="vflow">
         <div class="vstep card" v-tilt>
@@ -105,8 +105,8 @@
     <!-- ⑤ 国际高校合作机制 -->
     <section class="coop-intl container" v-reveal>
       <div class="sec-head">
-        <h2>国际高校合作机制</h2>
-        <p>与英国及欧洲多所科研院校建立长期合作通道，聚焦成果转化、实验共建、标准共研与跨境落地。</p>
+  <h2>国际高校合作机制</h2>
+  <p>与英国及欧洲多所科研院校建立长期合作通道，重点在联合研发、实验与标准共建、跨境验证与本地化量产等环节形成稳定机制。</p>
       </div>
       
       <div class="coop-list g2">
@@ -140,8 +140,8 @@
     <!-- ⑥ 园区场景与企业承接 -->
     <section class="coop-park container" v-reveal>
       <div class="sec-head">
-        <h2>园区场景与企业承接</h2>
-        <p>与地方政府及产业园区深度合作，为企业与高校提供中试、孵化与试产的场地与政策支持。</p>
+  <h2>园区场景与企业承接</h2>
+  <p>与政府园区共建承接通道，提供中试能力、验证场景与政策工具包，降低试点与小规模量产的综合成本。</p>
       </div>
       <div class="g3">
         <div class="park-card" v-tilt>
@@ -169,8 +169,8 @@
     <!-- ⑦ 双库智能撮合平台 -->
     <section class="coop-engine container" v-reveal>
       <div class="sec-head">
-        <h2>双库智能撮合平台</h2>
-        <p>依托科技人才库与产业企业库两大数据库，构建标签化智能撮合系统，实现精准匹配、动态跟踪与成果再利用。</p>
+  <h2>双库智能撮合平台</h2>
+  <p>基于“科技人才库 × 产业企业库”的双库数据与标签体系，实现画像匹配、过程跟踪与案例沉淀，让可复用经验持续提升匹配效率。</p>
       </div>
       <div class="engine">
         <div class="pool left" aria-hidden="true">科技人才库</div>
@@ -189,8 +189,8 @@
     <!-- ⑧ 合规与知识产权保障 -->
     <section class="coop-compliance container" v-reveal>
       <div class="sec-head">
-        <h2>合规与知识产权保障</h2>
-        <p>遵循中英两地科技成果转化与知识产权管理法规，项目国际协作前完成法务与 IP 分级审查，落实跨境数据与样品的分类监管。</p>
+  <h2>合规与知识产权保障</h2>
+  <p>遵循中英双地法规，围绕 IP、数据与人员/样品跨境开展合规审查与分级管理，提供模板化协议与操作规范。</p>
       </div>
       <div class="g4">
         <div class="c-card" v-tilt>
@@ -215,8 +215,8 @@
     <!-- ⑨ 我们的目标 -->
     <section class="coop-goal container" v-reveal>
       <div class="goal-wrap">
-        <h2>让科研成果走得更远，也落得更实</h2>
-        <p>育创湾致力于构建一个跨界、跨国、跨机构的科技成果转化网络，让科研不再止于论文，让创新真正成为生产力。</p>
+  <h2>以结果为导向的技术落地</h2>
+  <p>以清晰的里程碑与可验证指标为准绳，让创新更快转化为可度量的业务价值。</p>
         <ul>
           <li>建立中国与海外高校技术双循环机制</li>
           <li>提升科研成果的国际应用价值</li>
@@ -228,11 +228,10 @@
 </template>
 
 <script setup lang="ts">
-const logos = Array.from({ length: 12 }, (_, i) => ({
-  name: String(i + 1),
-  ext: 'png',
-  alt: `合作院校 Logo ${i + 1}`
-}))
+const logos = [
+  ...Array.from({ length: 11 }, (_, i) => ({ name: String(i + 1), ext: 'png', alt: `合作院校 Logo ${i + 1}` })),
+  { name: '13', ext: 'png', alt: '合作院校 Logo 12' }
+]
 
 const placeholder = `data:image/svg+xml;utf8,
 <svg xmlns='http://www.w3.org/2000/svg' width='320' height='120' viewBox='0 0 320 120'>
@@ -300,19 +299,19 @@ function onGovLogoError(e: Event) {
 /* ① Hero */
 .coop-hero{position:relative;padding:86px 0 56px;text-align:center;overflow:hidden}
 .coop-hero .hero-bg{position:absolute;inset:-20%;background:
-  radial-gradient(900px 520px at 50% -10%,rgba(56,140,225,.30),rgba(56,140,225,0) 70%),
-  linear-gradient(180deg,#0f2747 0%,#12416f 42%,#1a62b0 78%,#f4f8ff 130%);
+  radial-gradient(900px 520px at 50% 10%,rgba(56,140,225,.30),rgba(56,140,225,0) 70%),
+  linear-gradient(180deg,rgba(224,236,248,.85) 0%,rgba(214,230,244,.70) 55%,rgba(206,226,242,.55) 100%);
   filter:saturate(112%);opacity:.96}
 .coop-hero .hero-grid{display:none}
-.coop-hero .title{position:relative;margin:0 0 16px;font-size:clamp(34px,5vw,52px);font-weight:800;letter-spacing:.4px;background:linear-gradient(95deg,#a9c4ff 0%,#d6e7ff 55%,#ffffff 100%);-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 8px 28px rgba(0,0,0,.35))}
-.coop-hero .lead{position:relative;margin:0 auto 16px;max-width:960px;color:#e0edff;opacity:.95;line-height:1.65}
+.coop-hero .title{position:relative;margin:0 0 16px;font-size:clamp(34px,5vw,52px);font-weight:800;letter-spacing:.4px;background:linear-gradient(95deg,#123153 0%,#195894 25%,#2373c8 48%,#2e7dff 65%,#55beff 82%,#9de9ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 6px 18px rgba(60,140,220,.25)) drop-shadow(0 2px 4px rgba(0,0,0,.22))}
+.coop-hero .lead{position:relative;margin:0 auto 16px;max-width:960px;color:#34526a;opacity:.95;line-height:1.65}
 .badges{position:relative;display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:8px}
-.badge{padding:10px 14px;border-radius:999px;border:1px solid rgba(180,210,255,.5);background:linear-gradient(160deg,rgba(255,255,255,.10),rgba(255,255,255,.03));color:#e6f0ff;font-size:12px;backdrop-filter:blur(8px) saturate(150%)}
+.badge{padding:10px 14px;border-radius:999px;border:1px solid rgba(140,170,200,.45);background:linear-gradient(160deg,rgba(255,255,255,.85),rgba(255,255,255,.65));color:#1a4b8f;font-size:12px;backdrop-filter:blur(8px) saturate(150%)}
 
 /* ② 全球化网络 */
 .coop-global{position:relative;padding:24px 0 56px}
 .sec-head{margin:0 auto 16px;max-width:900px}
-.sec-head h2{margin:0 0 6px;font-size:26px;font-weight:800;letter-spacing:.4px;background:linear-gradient(90deg,#16406d,#2e7dff 55%,#6ec4ff);-webkit-background-clip:text;color:transparent}
+.sec-head h2{margin:0 0 6px;font-size:26px;font-weight:800;letter-spacing:.4px;background:linear-gradient(90deg,#16406d,#2e7dff 55%,#6ec4ff);-webkit-background-clip:text;background-clip:text;color:transparent}
 .sec-head p{margin:0;color:#34526a}
 .world-bg{position:absolute;inset:0;background:
   radial-gradient(680px 300px at 50% 30%,rgba(56,140,225,.20),rgba(56,140,225,0) 70%),

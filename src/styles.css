@@ -22,10 +22,35 @@
 body{margin:0; font-family:var(--font-base); color:var(--text); background:linear-gradient(180deg,#ffffff 0%, #f0f7ff 35%, #e2f1ff 100%)}
 .container{width:100%;max-width:var(--container);margin:0 auto;padding:0 20px}
 
-/* Header（浅色吸顶） */
-.site-header{position:sticky;top:0;z-index:1000; background:rgba(255,255,255,.86); backdrop-filter:saturate(140%) blur(12px); border-bottom:1px solid rgba(170,190,215,.4); transition:height .3s ease, background .3s ease}
-.header-inner{display:grid;grid-template-columns:auto 1fr auto;align-items:center;column-gap:40px;height:72px;transition:height .3s ease}
-.site-header.shrink{background:rgba(255,255,255,.92); box-shadow:0 4px 14px -4px rgba(27,59,110,.12)}
+/* Header（浅色吸顶 + 液态玻璃） */
+.site-header{position:sticky;top:0;z-index:1000; 
+	/* 半透明底色，配合 backdrop-blur 呈现磨砂玻璃 */
+	background:rgba(255,255,255,.86);
+	backdrop-filter:saturate(140%) blur(12px); -webkit-backdrop-filter:saturate(140%) blur(12px);
+	border-bottom:1px solid rgba(170,190,215,.4);
+	transition:height .3s ease, background .3s ease, backdrop-filter .3s ease, box-shadow .3s ease, border-color .3s ease;
+	isolation:isolate; /* 避免伪元素与父层混叠影响 */
+}
+/* 液态玻璃高光与柔光层 */
+.site-header::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
+	background:
+		radial-gradient(120% 80% at -10% -40%, rgba(255,255,255,.40), transparent 60%),
+		radial-gradient(120% 80% at 110% -20%, rgba(255,255,255,.28), transparent 60%),
+		linear-gradient(180deg, rgba(255,255,255,.18), rgba(255,255,255,.08));
+	opacity:.95;
+}
+.site-header::after{content:"";position:absolute;left:0;right:0;top:0;height:1px;pointer-events:none;
+	background:linear-gradient(90deg, rgba(255,255,255,.55), rgba(255,255,255,0) 12%, rgba(255,255,255,0) 88%, rgba(255,255,255,.55));
+	opacity:.6;
+}
+.header-inner{display:grid;grid-template-columns:auto 1fr auto;align-items:center;column-gap:40px;height:72px;transition:height .3s ease; position:relative; z-index:1}
+.site-header.shrink{
+	/* 下拉后稍增不透明度并增强 blur，呈现更朦胧的液态玻璃质感 */
+	background:rgba(255,255,255,.92); 
+	backdrop-filter:saturate(160%) blur(16px); -webkit-backdrop-filter:saturate(160%) blur(16px);
+	box-shadow:0 4px 14px -4px rgba(27,59,110,.12);
+	border-bottom-color:rgba(170,190,215,.5);
+}
 .site-header.shrink .header-inner{height:56px}
 .site-header.shrink .logo img{height:28px !important; filter:drop-shadow(0 2px 6px rgba(10,42,90,.25))}
 .logo{display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none;font-weight:700;line-height:1}

@@ -196,8 +196,8 @@ const heroKeys = ['科技成果转化法','技术转移体系建设方案','创�
 /* ① Hero */
 .policy-hero{position:relative;padding:86px 0 56px;text-align:center;overflow:hidden}
 .policy-hero .hero-bg{position:absolute;inset:-20%;background:
-  radial-gradient(900px 520px at 50% -10%,rgba(56,140,225,.30),rgba(56,140,225,0) 70%),
-  linear-gradient(180deg,#0f2747 0%,#12416f 42%,#1a62b0 78%,#f4f8ff 130%);
+  radial-gradient(900px 520px at 50% 10%,rgba(56,140,225,.30),rgba(56,140,225,0) 70%),
+  linear-gradient(180deg,rgba(224,236,248,.85) 0%,rgba(214,230,244,.70) 55%,rgba(206,226,242,.55) 100%);
   filter:saturate(112%);opacity:.96}
 .policy-hero .hero-grid{position:absolute;inset:0;background:
   repeating-linear-gradient(90deg,rgba(255,255,255,.06) 0 1px,transparent 1px 60px),
@@ -205,13 +205,13 @@ const heroKeys = ['科技成果转化法','技术转移体系建设方案','创�
   mask:linear-gradient(180deg,rgba(0,0,0,.0) 0%,rgba(0,0,0,.55) 55%,rgba(0,0,0,0) 100%);
   animation:heroGrid 36s linear infinite;opacity:.26}
 @keyframes heroGrid{0%{transform:translateY(0)}100%{transform:translateY(-60px)}}
-.policy-hero .title{position:relative;margin:0 0 16px;font-size:clamp(34px,5vw,52px);font-weight:800;letter-spacing:.4px;background:linear-gradient(95deg,#a9c4ff 0%,#d6e7ff 55%,#ffffff 100%);-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 8px 28px rgba(0,0,0,.35))}
-.policy-hero .lead{position:relative;margin:0 auto 16px;max-width:960px;color:#e0edff;opacity:.95;line-height:1.65}
+.policy-hero .title{position:relative;margin:0 0 16px;font-size:clamp(34px,5vw,52px);font-weight:800;letter-spacing:.4px;background:linear-gradient(95deg,#123153 0%,#195894 25%,#2373c8 48%,#2e7dff 65%,#55beff 82%,#9de9ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 6px 18px rgba(60,140,220,.25)) drop-shadow(0 2px 4px rgba(0,0,0,.22))}
+.policy-hero .lead{position:relative;margin:0 auto 16px;max-width:960px;color:#34526a;opacity:.95;line-height:1.65}
 .keywords{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:8px}
-.chip{padding:8px 12px;border-radius:999px;border:1px solid rgba(180,210,255,.5);background:linear-gradient(160deg,rgba(255,255,255,.10),rgba(255,255,255,.03));color:#e6f0ff;font-size:12px;backdrop-filter:blur(8px) saturate(150%)}
+.chip{padding:8px 12px;border-radius:999px;border:1px solid rgba(140,170,200,.45);background:linear-gradient(160deg,rgba(255,255,255,.85),rgba(255,255,255,.65));color:#1a4b8f;font-size:12px;backdrop-filter:blur(8px) saturate(150%)}
 .tags-cloud{pointer-events:none;position:absolute;inset:0;display:flex;gap:12px;flex-wrap:wrap;justify-content:center;align-content:flex-end;padding:40px 20px 0}
-.tags-cloud span{color:#cfe3ff;font-size:12px;border:1px dashed rgba(180,210,255,.40);border-radius:999px;padding:6px 10px;opacity:.5}
-.tags-cloud span.strong{color:#ffffff;opacity:.95;border-color:rgba(230,245,255,.9);font-weight:800;letter-spacing:.3px;box-shadow:0 6px 18px -12px rgba(0,0,0,.45)}
+.tags-cloud span{color:#2a64a2;font-size:12px;border:1px dashed rgba(140,170,200,.45);border-radius:999px;padding:6px 10px;opacity:.8;background:linear-gradient(180deg,rgba(255,255,255,.90),rgba(255,255,255,.70))}
+.tags-cloud span.strong{color:#0a2a4a;opacity:1;border-color:rgba(80,130,200,.55);font-weight:800;letter-spacing:.3px;box-shadow:0 6px 18px -12px rgba(40,90,160,.18)}
 
 /* 页内锚点导航 */
 .section-nav{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;padding:12px 0 8px;margin-bottom:24px}
@@ -220,7 +220,7 @@ const heroKeys = ['科技成果转化法','技术转移体系建设方案','创�
 
 /* 通用区块头 */
 .sec-head{margin:0 auto 16px;max-width:900px}
-.sec-head h2{margin:0 0 6px;font-size:26px;font-weight:800;letter-spacing:.4px;background:linear-gradient(90deg,#16406d,#2e7dff 55%,#6ec4ff);-webkit-background-clip:text;color:transparent}
+.sec-head h2{margin:0 0 6px;font-size:26px;font-weight:800;letter-spacing:.4px;background:linear-gradient(90deg,#16406d,#2e7dff 55%,#6ec4ff);-webkit-background-clip:text;background-clip:text;color:transparent}
 .sec-head p{margin:0;color:#34526a}
 
 /* ② 背景与顶层设计 */
@@ -257,7 +257,7 @@ const heroKeys = ['科技成果转化法','技术转移体系建设方案','创�
 .policy-outcomes{padding:20px 0 56px}
 .out-grid{display:grid;gap:18px;grid-template-columns:repeat(4,minmax(0,1fr))}
 .out-card{padding:16px;border:1px solid rgba(140,170,200,.40);border-radius:16px;background:#fff;box-shadow:0 6px 18px -12px rgba(18,54,95,.16);text-align:center}
-.out-card .num{font-size:28px;font-weight:800;background:linear-gradient(88deg,#15345c,#2e7dff 55%,#6ab9ff);-webkit-background-clip:text;color:transparent}
+.out-card .num{font-size:28px;font-weight:800;background:linear-gradient(88deg,#15345c,#2e7dff 55%,#6ab9ff);-webkit-background-clip:text;background-clip:text;color:transparent}
 .out-card .txt{font-size:12px;color:#34526a}
 @media (max-width:1280px){.out-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:700px){.out-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -274,9 +274,9 @@ const heroKeys = ['科技成果转化法','技术转移体系建设方案','创�
 /* ⑦ 愿景 */
 .policy-vision{position:relative;padding:56px 0 80px;text-align:center}
 .policy-vision .vision-bg{position:absolute;inset:0;background:
-  radial-gradient(780px 320px at 50% -10%,rgba(56,140,225,.35),rgba(56,140,225,0) 70%),
-  linear-gradient(180deg,#0f2747 0%,#12416f 42%,#1a62b0 90%);
+  radial-gradient(780px 320px at 50% 0%,rgba(56,140,225,.30),rgba(56,140,225,0) 70%),
+  linear-gradient(180deg,rgba(224,236,248,.85) 0%,rgba(214,230,244,.70) 55%,rgba(206,226,242,.55) 100%);
   opacity:.95}
-.policy-vision .v-title{position:relative;margin:0 0 10px;font-size:28px;font-weight:800;letter-spacing:.4px;background:linear-gradient(95deg,#a9c4ff 0%,#d6e7ff 55%,#ffffff 100%);-webkit-background-clip:text;color:transparent}
-.policy-vision .v-sub{position:relative;margin:0 auto;max-width:820px;color:#e3efff}
+.policy-vision .v-title{position:relative;margin:0 0 10px;font-size:28px;font-weight:800;letter-spacing:.4px;background:linear-gradient(95deg,#123153 0%,#195894 25%,#2373c8 48%,#2e7dff 65%,#55beff 82%,#9de9ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.policy-vision .v-sub{position:relative;margin:0 auto;max-width:820px;color:#34526a}
 </style>

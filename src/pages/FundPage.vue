@@ -294,8 +294,8 @@ function onInvestLogoError(e: Event) {
 /* ① 页首区块 */
 .fund-hero{position:relative;padding:90px 0 70px;text-align:center;overflow:hidden}
 .fund-hero .hero-bg{position:absolute;inset:-20%;background:
-  radial-gradient(1000px 520px at 50% -20%,rgba(56,140,225,.38),rgba(56,140,225,0) 70%),
-  linear-gradient(180deg,#0f2747 0%,#12416f 40%,#1a62b0 75%,#f4f8ff 130%);
+  radial-gradient(900px 520px at 50% 10%,rgba(56,140,225,.30),rgba(56,140,225,0) 70%),
+  linear-gradient(180deg,rgba(224,236,248,.85) 0%,rgba(214,230,244,.70) 55%,rgba(206,226,242,.55) 100%);
   filter:saturate(112%);opacity:.96}
 .fund-hero .hero-ink{position:absolute;inset:0;background:
   repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 1px,transparent 1px 60px),
@@ -303,19 +303,19 @@ function onInvestLogoError(e: Event) {
   mask:linear-gradient(180deg,rgba(0,0,0,.0) 0%,rgba(0,0,0,.50) 55%,rgba(0,0,0,0) 100%);
   animation:heroGrid 36s linear infinite;opacity:.26}
 @keyframes heroGrid{0%{transform:translateY(0)}100%{transform:translateY(-60px)}}
-.fund-hero .title{position:relative;margin:0 0 18px;font-size:clamp(36px,5.2vw,54px);font-weight:800;letter-spacing:.6px;background:linear-gradient(95deg,#a9c4ff 0%,#d6e7ff 55%,#ffffff 100%);-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 8px 28px rgba(0,0,0,.35))}
-.fund-hero .lead{position:relative;margin:0 auto 10px;max-width:980px;color:#d6e8ff;opacity:.92;line-height:1.65}
+.fund-hero .title{position:relative;margin:0 0 18px;font-size:clamp(36px,5.2vw,54px);font-weight:800;letter-spacing:.6px;background:linear-gradient(95deg,#123153 0%,#195894 25%,#2373c8 48%,#2e7dff 65%,#55beff 82%,#9de9ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 6px 18px rgba(60,140,220,.25)) drop-shadow(0 2px 4px rgba(0,0,0,.22))}
+.fund-hero .lead{position:relative;margin:0 auto 10px;max-width:980px;color:#34526a;opacity:.95;line-height:1.65}
 .positioning{position:relative;margin:18px auto 20px}
-.pill{display:inline-block;padding:10px 14px;border:1px solid rgba(180,210,255,.5);border-radius:999px;background:linear-gradient(160deg,rgba(255,255,255,.10),rgba(255,255,255,.03));color:#e6f0ff;font-size:13px;letter-spacing:.3px;backdrop-filter:blur(8px) saturate(150%)}
+.pill{display:inline-block;padding:10px 14px;border:1px solid rgba(140,170,200,.45);border-radius:999px;background:linear-gradient(160deg,rgba(255,255,255,.85),rgba(255,255,255,.65));color:#1a4b8f;font-size:13px;letter-spacing:.3px;backdrop-filter:blur(8px) saturate(150%)}
 .hero-kv{position:relative;margin:22px auto 0;display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr));max-width:980px}
-.hero-kv .kv{display:flex;gap:10px;align-items:center;justify-content:center;padding:10px 12px;border:1px solid rgba(160,200,255,.45);border-radius:14px;background:linear-gradient(170deg,rgba(255,255,255,.10),rgba(255,255,255,.04));color:#d3e6ff;min-height:48px}
+.hero-kv .kv{display:flex;gap:10px;align-items:center;justify-content:center;padding:10px 12px;border:1px solid rgba(140,170,200,.45);border-radius:14px;background:linear-gradient(170deg,rgba(255,255,255,.95),rgba(245,250,255,.88));color:#1a4169;min-height:48px}
 .hero-kv .lab{opacity:.85;font-size:13px}
 .hero-kv .val{font-weight:600;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis;max-width:100%}
 .hero-stats{position:relative;margin:26px auto 0;display:grid;gap:18px;grid-template-columns:repeat(4,minmax(0,1fr));max-width:980px}
 .hero-stats .stat{--bd:rgba(160,200,250,.55);padding:20px 16px;border:1px solid var(--bd);border-radius:18px;background:linear-gradient(170deg,rgba(255,255,255,.10),rgba(255,255,255,.04));backdrop-filter:blur(8px) saturate(160%);box-shadow:0 10px 34px -14px rgba(0,0,0,.45);transition:transform .35s ease,border-color .35s ease}
 .hero-stats .stat:hover{transform:translateY(-6px);border-color:rgba(190,220,255,.85)}
-.hero-stats .num{font-size:26px;font-weight:800;color:#ffffff}
-.hero-stats .txt{font-size:12px;letter-spacing:.6px;color:#c6dbff;text-transform:uppercase}
+.hero-stats .num{font-size:26px;font-weight:800;color:#15345c}
+.hero-stats .txt{font-size:12px;letter-spacing:.6px;color:#2a64a2;text-transform:uppercase}
 @media (max-width:900px){.hero-kv{grid-template-columns:1fr}.hero-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 /* 通用区块头 */

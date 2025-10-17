@@ -14,6 +14,7 @@ export const router = createRouter({
     { path: '/news', name: 'news', component: () => import('./pages/NewsPage.vue') },
     { path: '/about-policy', name: 'about-policy', component: () => import('./pages/AboutPolicyPage.vue') },
     { path: '/services-coop', name: 'services-coop', component: () => import('./pages/ServicesCoopPage.vue') },
+  { path: '/faq', name: 'faq', component: () => import('./pages/FaqPage.vue') },
     { path: '/contact', name: 'contact', component: () => import('./pages/ContactPage.vue') },
   ],
   scrollBehavior(){ return { top: 0 } }

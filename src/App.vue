@@ -24,8 +24,9 @@
             <RouterLink to="/services-coop">{{ t('nav.policyEdu') }}</RouterLink>
           </div>
         </div>
-        <RouterLink to="/news">{{ t('nav.news') }}</RouterLink>
-        <RouterLink to="/contact">{{ t('nav.contact') }}</RouterLink>
+  <RouterLink to="/news">{{ t('nav.news') }}</RouterLink>
+  <RouterLink to="/faq">常见问题</RouterLink>
+  <RouterLink to="/contact">{{ t('nav.contact') }}</RouterLink>
       </nav>
       <div class="lang-switch" aria-label="Language Switcher">
         <button :class="{active: locale==='en'}" @click="setLocale('en')">EN</button>

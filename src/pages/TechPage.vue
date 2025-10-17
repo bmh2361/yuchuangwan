@@ -35,12 +35,14 @@
           <p class="l2">{{ t(`tech.collab.${m.key}.l2`) }}</p>
         </div>
       </div>
+      <!-- 原全球连线可视化已移除 -->
     </section>
   </div>
 </template>
 
 <script setup lang="ts">
 import { t } from '../i18n'
+// 已移除 GlobeFlow 动画
 // 分类配置（后续可迁移到单独数据文件）
 interface Category { slug: string; icon: string; color: string }
 const categories: Category[] = [
@@ -65,6 +67,8 @@ const stats = [
   { key:'fields', val:'20+', label:'tech.stats.fields' },
   { key:'custom', val:t('tech.stats.customVal'), label:'tech.stats.custom' },
 ]
+
+// 保留 2D 画布版 GlobeFlow
 </script>
 
 <style scoped>
@@ -80,15 +84,15 @@ const stats = [
   mask:linear-gradient(180deg,rgba(0,0,0,.0) 0%,rgba(0,0,0,.75) 55%,rgba(0,0,0,0) 100%);
   animation:gridFloat 34s linear infinite;opacity:.55;}
 @keyframes gridFloat {0%{transform:translateY(0)}100%{transform:translateY(-60px)}}
-.tech-title{position:relative;margin:0 0 18px;font-size:clamp(38px,5vw,54px);font-weight:800;letter-spacing:.6px;background:linear-gradient(95deg,#123153 0%,#195894 25%,#2373c8 48%,#2e7dff 65%,#55beff 82%,#9de9ff 100%);-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 6px 18px rgba(60,140,220,.25)) drop-shadow(0 2px 4px rgba(0,0,0,.32));}
+.tech-title{position:relative;margin:0 0 18px;font-size:clamp(38px,5vw,54px);font-weight:800;letter-spacing:.6px;background:linear-gradient(95deg,#123153 0%,#195894 25%,#2373c8 48%,#2e7dff 65%,#55beff 82%,#9de9ff 100%);background-clip:text;-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 6px 18px rgba(60,140,220,.25)) drop-shadow(0 2px 4px rgba(0,0,0,.32));}
 .tech-sub{position:relative;margin:0 auto 34px;max-width:860px;font-size:16px;line-height:1.55;color:#2d4e6d;letter-spacing:.3px;text-wrap:balance}
 .tech-stats{position:relative;display:flex;justify-content:center;gap:34px;flex-wrap:wrap;margin:0 auto;max-width:980px}
 .stat-card{--bd:rgba(150,190,225,.75);position:relative;min-width:200px;padding:26px 26px 30px;border:1px solid var(--bd);border-radius:22px;background:linear-gradient(160deg,rgba(255,255,255,.92),rgba(242,247,252,.90) 60%,rgba(230,240,248,.92));backdrop-filter:blur(10px) saturate(170%);box-shadow:0 10px 34px -14px rgba(18,54,95,.35),0 4px 16px -4px rgba(30,80,140,.24);text-align:center;transition:transform .35s ease, box-shadow .35s ease,border-color .35s ease}
 .stat-card:hover{transform:translateY(-8px);border-color:rgba(110,170,215,.95);box-shadow:0 20px 50px -18px rgba(18,58,105,.50),0 10px 30px -12px rgba(36,90,155,.34)}
-.stat-card .val{font-size:38px;font-weight:700;line-height:1.05;margin:0 0 6px;background:linear-gradient(88deg,#15345c,#2e7dff 55%,#6ab9ff);-webkit-background-clip:text;color:transparent;letter-spacing:.6px;}
+.stat-card .val{font-size:38px;font-weight:700;line-height:1.05;margin:0 0 6px;background:linear-gradient(88deg,#15345c,#2e7dff 55%,#6ab9ff);background-clip:text;-webkit-background-clip:text;color:transparent;letter-spacing:.6px;}
 .stat-card .lab{font-size:13px;letter-spacing:.8px;color:#4f6d89;text-transform:uppercase;font-weight:600}
 .collab-section{padding:10px 0 140px}
-.collab-heading{margin:0 0 12px;font-size:30px;font-weight:700;letter-spacing:.6px;background:linear-gradient(90deg,#16406d,#2e7dff 55%,#6ec4ff);-webkit-background-clip:text;color:transparent}
+.collab-heading{margin:0 0 12px;font-size:30px;font-weight:700;letter-spacing:.6px;background:linear-gradient(90deg,#16406d,#2e7dff 55%,#6ec4ff);background-clip:text;-webkit-background-clip:text;color:transparent}
 .collab-intro{margin:0 0 40px;color:#34526a;font-size:15px;max-width:760px}
 .collab-grid{display:grid;gap:30px;grid-template-columns:repeat(4,minmax(0,1fr))}
 @media (max-width:1080px){.collab-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -102,7 +106,7 @@ const stats = [
 .c-icon{width:56px;height:56px;display:flex;align-items:center;justify-content:center;border-radius:18px;background:linear-gradient(145deg,var(--accent,#2e7dff) 0%,rgba(255,255,255,.15) 120%);color:#fff;box-shadow:0 6px 16px -4px var(--accent,#2e7dff),0 0 0 1px rgba(255,255,255,.4) inset;filter:drop-shadow(0 10px 22px rgba(40,90,160,.35));margin-bottom:4px;position:relative}
 .c-icon:after{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(180deg,rgba(255,255,255,.45),rgba(255,255,255,.05));mix-blend-mode:overlay;pointer-events:none}
 .tech-categories{padding:40px 0 120px}
-.cat-heading{margin:0 0 10px;font-size:30px;font-weight:700;letter-spacing:.6px;background:linear-gradient(90deg,#16406d,#2e7dff 55%,#6ec4ff);-webkit-background-clip:text;color:transparent}
+.cat-heading{margin:0 0 10px;font-size:30px;font-weight:700;letter-spacing:.6px;background:linear-gradient(90deg,#16406d,#2e7dff 55%,#6ec4ff);background-clip:text;-webkit-background-clip:text;color:transparent}
 .cat-intro{margin:0 0 34px;color:#34526a;font-size:15px;max-width:720px}
 .cat-grid{display:grid;gap:30px;grid-template-columns:repeat(3,minmax(0,1fr))}
 @media (max-width:960px){.cat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -138,4 +142,5 @@ const stats = [
   .stat-card .val{font-size:30px}
   .tech-sub{font-size:15px;margin-bottom:28px}
 }
+/* 原 globe-section 已移除 */
 </style>

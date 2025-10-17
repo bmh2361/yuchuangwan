@@ -7,9 +7,8 @@
         <div class="hero-left">
           <h1 class="hero-title">产业合作 <span class="en">Industrial Collaboration</span></h1>
           <p class="hero-sub">
-            “育创湾（VisionTech Bay）致力于构建‘科技—产业—资本—政策’协同生态，
-            通过与政府、投资机构、国内外高校及科研单位的长期合作，
-            推动科研成果转化、产业升级与全球创新网络建设。”
+            以“政府 × 产业 × 高校/科研 × 资本”的协同机制为框架，聚焦可验证的里程碑与落地指标，
+            通过制度、场景与资金的协同推动成果从实验室走向量产与应用。
           </p>
           <div class="rotator" :key="activePhrase">
             <span class="rotator-text">{{ activePhrase }}</span>
@@ -41,21 +40,21 @@
           <div class="emoji" aria-hidden="true">🏛</div>
           <div>
             <h2>中国地方政府合作</h2>
-            <p>育创湾与多地政府及园区共建科技创新平台，通过“产业链招商 + 平台化运营 + 数据驱动管理”，打造可持续的区域成果转化生态。</p>
+            <p>与地方政府及园区共建承接平台，以“产业链招商 + 平台化运营 + 数据驱动治理”形成长期机制，提升区域内成果转化效率与质量。</p>
           </div>
         </header>
         <div class="cards g3">
           <article class="c-card" v-tilt>
-            <h3>政府园区共建模式</h3>
-            <p>以高校科研成果为核心资源，建设区域转化中心和示范实验室。</p>
+            <h3>承接平台与转化载体</h3>
+            <p>围绕重点赛道建设转化中心/示范实验室，形成可复用的工程化能力。</p>
           </article>
           <article class="c-card" v-tilt>
-            <h3>科技招商与创新集群</h3>
-            <p>协助地方政府制定产业引进规划，吸引科技型企业落地。</p>
+            <h3>产业链招商与集群化</h3>
+            <p>以需求端为牵引开展链上招商，实现项目簇群落地与产业协同。</p>
           </article>
           <article class="c-card" v-tilt>
-            <h3>政策评估与数据闭环</h3>
-            <p>构建长期绩效追踪体系，反馈数据助力政策优化。</p>
+            <h3>政策评估与治理闭环</h3>
+            <p>建立绩效与过程数据回流，支持政策优化与迭代治理。</p>
           </article>
         </div>
         <!-- 政府合作 logo 墙 -->
@@ -72,21 +71,22 @@
           <div class="emoji" aria-hidden="true">💰</div>
           <div>
             <h2>中国投资与资本合作</h2>
-            <p>育创湾联合产业基金、政府专项及社会资本，共同推动硬科技项目的成果转化和规模化发展，形成“服务 + 投资”双轮驱动模式。</p>
+            <p>联合政府专项与社会资本，聚焦具备工程化潜力的硬科技项目，
+              以“服务 + 投资”的双轮模式加速规模化落地。</p>
           </div>
         </header>
         <div class="cards g3">
           <article class="c-card" v-tilt>
-            <h3>联合投资平台</h3>
-            <p>搭建政府基金与企业资本协同机制，支持科研成果 PoC 与孵化。</p>
+            <h3>联合投资与协同</h3>
+            <p>打通政府基金、产业基金与企业资本，构建协同投资通道。</p>
           </article>
           <article class="c-card" v-tilt>
-            <h3>成果转化专项基金</h3>
-            <p>以硬科技项目为核心标的，提供早期阶段股权或 PoC 资金支持。</p>
+            <h3>成果转化专项</h3>
+            <p>围绕 PoC/中试关键环节配置资金，降低技术与市场不确定性。</p>
           </article>
           <article class="c-card" v-tilt>
-            <h3>投后赋能体系</h3>
-            <p>提供产业对接、技术顾问与政策资源，形成闭环孵化网络。</p>
+            <h3>投后赋能</h3>
+            <p>提供产业对接与技术顾问服务，结合政策资源形成闭环孵化。</p>
           </article>
         </div>
         <!-- 投资合作 logo 墙 -->
@@ -104,33 +104,34 @@
           <div class="emoji" aria-hidden="true">🎓</div>
           <div>
             <h2>高校与科研机构合作</h2>
-            <p>育创湾服务多所中国“双一流”高校并拓展国际合作网络，提供从专利确权、流程优化到产业化落地的全链条服务，联合共建实验室与标准共研平台。</p>
+            <p>服务多所“双一流”高校并拓展国际科研网络，围绕专利确权、流程优化、工程验证与标准共研等环节，
+              提供从校内机制到产业落地的端到端支持。</p>
           </div>
         </header>
         <div class="cards g3">
           <article class="c-card" v-tilt>
-            <h3>科研成果转化中心</h3>
-            <p>提供校内流程代办、IP 规划与商业方案设计。</p>
+            <h3>成果转化中心</h3>
+            <p>提供校内流程代办、IP 组合规划与商业方案设计。</p>
           </article>
           <article class="c-card" v-tilt>
             <h3>校企联合研发</h3>
-            <p>以产业需求为导向，共建实验室与应用研究项目。</p>
+            <p>以产业问题为牵引，共建实验室与应用研究，明确里程碑与验收标准。</p>
           </article>
           <article class="c-card" v-tilt>
-            <h3>成果落地与产业孵化</h3>
-            <p>对接政府园区与中试平台，加速科研成果商业化。</p>
+            <h3>落地与孵化</h3>
+            <p>对接园区与中试平台，推进从样机到小试/中试再到量产的路径。</p>
           </article>
           <article class="c-card" v-tilt>
             <h3>中英联合实验室</h3>
-            <p>搭建科研与产业协同空间，推动跨国技术验证与测试。</p>
+            <p>共建联合实验条件，进行跨国技术验证与对标测试。</p>
           </article>
           <article class="c-card" v-tilt>
-            <h3>国际成果转化通道</h3>
-            <p>支持海外技术在中国园区中试、落地与本地化生产。</p>
+            <h3>国际转化通道</h3>
+            <p>支持海外技术在中国进行中试与本地化量产，形成双向循环。</p>
           </article>
           <article class="c-card" v-tilt>
             <h3>学术顾问与标准共建</h3>
-            <p>与欧洲科学院及英国科研机构合作，参与国际标准制定与成果评估。</p>
+            <p>联合国际学术机构与标准组织，参与标准制定与第三方评估。</p>
           </article>
         </div>
         <!-- 高校与科研机构 logo 墙 -->
@@ -163,7 +164,10 @@ onBeforeUnmount(()=>{ if(timer) window.clearInterval(timer) })
 // Logo 墙数据（数字序号）
 const govLogos = Array.from({ length: 10 }, (_, i) => ({ name: String(i+1), alt: `政府合作 Logo ${i+1}` }))
 const investLogos = Array.from({ length: 16 }, (_, i) => ({ name: String(i+1), alt: `投资合作 Logo ${i+1}` }))
-const uniLogos = Array.from({ length: 12 }, (_, i) => ({ name: String(i+1), alt: `高校/科研机构 Logo ${i+1}` }))
+const uniLogos = [
+  ...Array.from({ length: 11 }, (_, i) => ({ name: String(i + 1), alt: `高校/科研机构 Logo ${i + 1}` })),
+  { name: '13', alt: '高校/科研机构 Logo 12' }
+]
 
 const placeholder = `data:image/svg+xml;utf8,
 <svg xmlns='http://www.w3.org/2000/svg' width='320' height='120' viewBox='0 0 320 120'>
@@ -208,8 +212,8 @@ function onImgError(e: Event){
 /* Hero */
 .ic-hero{position:relative;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background:
-  radial-gradient(900px 360px at 20% -10%, rgba(140,190,255,.35), rgba(140,190,255,0) 70%),
-  linear-gradient(180deg,#f2f7fc 0%,#eef5fb 100%)}
+  radial-gradient(900px 520px at 50% 10%,rgba(56,140,225,.30),rgba(56,140,225,0) 70%),
+  linear-gradient(180deg,rgba(224,236,248,.85) 0%,rgba(214,230,244,.70) 55%,rgba(206,226,242,.55) 100%)}
 .hero-inner{position:relative;display:grid;grid-template-columns:1fr;gap:18px;align-items:start;padding:70px 0}
 .hero-title{margin:0 0 10px;font-size:clamp(30px,5vw,48px);font-weight:800;letter-spacing:.4px;color:#0a2647}
 .hero-title .en{display:inline-block;margin-left:8px;font-size:16px;color:#2a64a2;letter-spacing:.6px}
