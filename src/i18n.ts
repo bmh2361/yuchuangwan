@@ -52,7 +52,8 @@ const messages: Messages = {
     'nav.services': 'Service System',
     'nav.tech': 'Technology Assets / R&D Match',
     'nav.fund': 'Funds & Investment Research',
-    'nav.policy': 'Policy Support / Gov Partnerships',
+  'nav.policy': 'Policy Support',
+  'nav.policyEdu': 'Enterprise / University Collaboration',
     'nav.news': 'News & Events',
     'nav.contact': 'Contact Us',
     // Footer
@@ -122,7 +123,8 @@ const messages: Messages = {
     'nav.services': '服务体系',
     'nav.tech': '技术成果库 / 科研对接',
     'nav.fund': '基金与投研',
-    'nav.policy': '政策支持 / 政府合作',
+  'nav.policy': '政策支持',
+  'nav.policyEdu': '企业 / 高校合作',
     'nav.news': '新闻与活动',
     'nav.contact': '联系我们',
     // Footer

@@ -8,18 +8,20 @@
       <nav class="nav">
         <RouterLink to="/">{{ t('nav.home') }}</RouterLink>
         <div class="nav-group has-sub">
-          <RouterLink to="/about" class="parent">{{ t('nav.about') }}</RouterLink>
+          <span class="parent">{{ t('nav.about') }}</span>
           <div class="sub-menu">
-            <RouterLink to="/cases">{{ t('nav.cases') }}</RouterLink>
+            <RouterLink to="/industry-collab">产业合作</RouterLink>
+            <RouterLink to="/success-cases">成功案例</RouterLink>
             <RouterLink to="/team">{{ t('nav.team') }}</RouterLink>
+            <RouterLink to="/about-policy">{{ t('nav.policy') }}</RouterLink>
           </div>
         </div>
         <div class="nav-group has-sub">
-          <RouterLink to="/services" class="parent">{{ t('nav.services') }}</RouterLink>
+          <span class="parent">{{ t('nav.services') }}</span>
           <div class="sub-menu">
             <RouterLink to="/tech">{{ t('nav.tech') }}</RouterLink>
             <RouterLink to="/fund">{{ t('nav.fund') }}</RouterLink>
-            <RouterLink to="/policy">{{ t('nav.policy') }}</RouterLink>
+            <RouterLink to="/services-coop">{{ t('nav.policyEdu') }}</RouterLink>
           </div>
         </div>
         <RouterLink to="/news">{{ t('nav.news') }}</RouterLink>

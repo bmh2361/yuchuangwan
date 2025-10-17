@@ -2,7 +2,10 @@ import type { Directive } from 'vue'
 
 export const countup: Directive<HTMLElement, number | {end:number;duration?:number}> = {
   mounted(el, binding){
-    const cfg = typeof binding.value === 'number' ? {end: binding.value, duration: 1200} : {duration:1200, end: 0, ...(binding.value||{})}
+    const cfg = typeof binding.value === 'number'
+      ? { end: binding.value, duration: 1200 }
+      : { duration: 1200, ...(binding.value as any || {} as any) }
+    if(typeof (cfg as any).end !== 'number') (cfg as any).end = 0
     const start = 0
     const end = Math.max(0, cfg.end)
     const dur = cfg.duration ?? 1200

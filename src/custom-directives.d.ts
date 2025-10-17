@@ -1,13 +1,3 @@
-// 补充声明（部分编辑器在严格模式下未即时解析 .ts 导出为模块时的兜底）
-declare module './reveal' {
-  import type { Directive } from 'vue'
-  export const reveal: Directive
-}
-declare module './plugins/countup' {
-  import type { Directive } from 'vue'
-  export const countup: Directive<HTMLElement, number | {end:number;duration?:number}>
-}
-declare module './plugins/tilt' {
-  import type { Directive } from 'vue'
-  export const tilt: Directive<HTMLElement, number>
-}
+// 该文件仅作为占位，避免相对路径 ambient module 声明造成的 TS 报错。
+// 实际类型由 `src/directives.d.ts` 的三斜杠引用提供。
+/// <reference path="./directives.d.ts" />
