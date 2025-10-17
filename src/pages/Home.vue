@@ -83,28 +83,30 @@ const features = [
 .unified-inner{position:relative;z-index:2;max-width:1180px;}
 
 /* 标题与副标题 */
-.hero-title{font-size:clamp(34px,5vw,58px);line-height:1.08;margin:0 0 22px;font-weight:800;background:linear-gradient(95deg,#123153 0%,#195894 25%,#2373c8 48%,#2e7dff 65%,#55beff 82%,#9de9ff 100%);-webkit-background-clip:text;color:transparent;letter-spacing:.55px;text-wrap:balance;filter:drop-shadow(0 6px 18px rgba(60,140,220,.25)) drop-shadow(0 2px 4px rgba(0,0,0,.32));}
+.hero-title{font-size:clamp(28px,6vw,58px);line-height:1.12;margin:0 0 22px;font-weight:800;background:linear-gradient(95deg,#123153 0%,#195894 25%,#2373c8 48%,#2e7dff 65%,#55beff 82%,#9de9ff 100%);background-clip:text;-webkit-background-clip:text;color:transparent;letter-spacing:.55px;text-wrap:balance;filter:drop-shadow(0 6px 18px rgba(60,140,220,.25)) drop-shadow(0 2px 4px rgba(0,0,0,.32));}
 .hero-title.tight{margin-bottom:16px;}
-.hero-sub{margin:0 0 10px;font-size:15px;line-height:1.55;color:#34526a;max-width:860px;}
+.hero-sub{margin:0 0 10px;font-size:clamp(14px,3.8vw,16px);line-height:1.6;color:#34526a;max-width:860px;}
 
 /* 统计卡片 */
 .stats{display:grid;grid-template-columns:repeat(3,150px);gap:24px;margin:34px 0 16px;}
-@media (max-width:640px){.stats{grid-template-columns:repeat(3,1fr);} }
-@media (max-width:480px){.stats{grid-template-columns:repeat(2,1fr);} }
+@media (max-width:960px){.stats{grid-template-columns:repeat(3,1fr);} }
+@media (max-width:560px){.stats{grid-template-columns:repeat(2,1fr);} }
+@media (max-width:380px){.stats{grid-template-columns:1fr;} }
 .stat-card{background:linear-gradient(160deg,rgba(255,255,255,.82),rgba(245,250,255,.75) 55%,rgba(235,244,252,.78));border:1px solid rgba(170,200,228,.72);border-radius:18px;padding:18px 16px;text-align:center;box-shadow:0 6px 24px -10px rgba(40,90,150,.22),0 2px 10px -4px rgba(40,90,150,.16);transition:transform .35s ease, box-shadow .35s ease,border-color .35s ease;backdrop-filter:blur(6px) saturate(130%);}
-.stat-card .val{font-size:32px;font-weight:700;line-height:1.05;background:linear-gradient(88deg,#15345c,#2e7dff 55%,#6ab9ff);-webkit-background-clip:text;color:transparent;margin-bottom:6px;letter-spacing:.5px;}
+.stat-card .val{font-size:clamp(24px,6vw,32px);font-weight:700;line-height:1.05;background:linear-gradient(88deg,#15345c,#2e7dff 55%,#6ab9ff);background-clip:text;-webkit-background-clip:text;color:transparent;margin-bottom:6px;letter-spacing:.5px;}
 .stat-card .lab{font-size:11px;letter-spacing:.6px;color:#5a7794;text-transform:uppercase;}
 .stat-card:hover{transform:translateY(-6px);box-shadow:0 16px 40px -14px rgba(40,90,150,.30),0 8px 22px -10px rgba(40,90,150,.20);border-color:rgba(150,190,225,.95);}
 
 /* 核心服务网格 */
-.section-heading{margin:72px 0 32px;font-size:26px;font-weight:700;letter-spacing:.5px;background:linear-gradient(90deg,#16406d,#2e7dff 55%,#6ec4ff);-webkit-background-clip:text;color:transparent;}
+.section-heading{margin:72px 0 32px;font-size:clamp(20px,4.6vw,26px);font-weight:700;letter-spacing:.5px;background:linear-gradient(90deg,#16406d,#2e7dff 55%,#6ec4ff);background-clip:text;-webkit-background-clip:text;color:transparent;}
 .section-heading.compact{margin-top:62px;}
 .core-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px;}
 @media (max-width:960px){.core-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
 @media (max-width:560px){.core-grid{grid-template-columns:1fr;}}
 .core-card{position:relative;padding:30px 28px 36px;border:1px solid rgba(90,140,175,.78);border-radius:22px;background:linear-gradient(170deg,rgba(255,255,255,.94),rgba(242,247,252,.90) 60%,rgba(232,240,248,.92));backdrop-filter:blur(12px) saturate(175%);box-shadow:0 10px 34px -14px rgba(18,54,95,.38),0 4px 16px -4px rgba(30,80,140,.26);}
 .core-card:before{display:none;}
-.core-card h3{margin:0 0 10px;font-size:19px;font-weight:700;color:#032540;letter-spacing:.6px;text-shadow:0 1px 2px rgba(0,0,0,.08);} 
+.core-card h3{margin:0 0 10px;font-size:clamp(16px,4.4vw,19px);font-weight:700;color:#032540;letter-spacing:.6px;text-shadow:0 1px 2px rgba(0,0,0,.08);} 
+@media (max-width:560px){.core-card p{font-size:13.5px}}
 .core-card p{margin:0;font-size:14px;line-height:1.66;color:#08385d;text-shadow:0 1px 1px rgba(255,255,255,.35);} 
 .core-card:hover{transform:translateY(-8px);border-color:rgba(110,170,215,.95);box-shadow:0 20px 50px -18px rgba(18,58,105,.50),0 10px 30px -12px rgba(36,90,155,.34);} 
 </style>

@@ -303,15 +303,16 @@ function onGovLogoError(e: Event) {
   linear-gradient(180deg,rgba(224,236,248,.85) 0%,rgba(214,230,244,.70) 55%,rgba(206,226,242,.55) 100%);
   filter:saturate(112%);opacity:.96}
 .coop-hero .hero-grid{display:none}
-.coop-hero .title{position:relative;margin:0 0 16px;font-size:clamp(34px,5vw,52px);font-weight:800;letter-spacing:.4px;background:linear-gradient(95deg,#123153 0%,#195894 25%,#2373c8 48%,#2e7dff 65%,#55beff 82%,#9de9ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 6px 18px rgba(60,140,220,.25)) drop-shadow(0 2px 4px rgba(0,0,0,.22))}
+.coop-hero .title{position:relative;margin:0 0 16px;font-size:clamp(28px,5.6vw,52px);font-weight:800;letter-spacing:.4px;background:linear-gradient(95deg,#123153 0%,#195894 25%,#2373c8 48%,#2e7dff 65%,#55beff 82%,#9de9ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 6px 18px rgba(60,140,220,.25)) drop-shadow(0 2px 4px rgba(0,0,0,.22))}
 .coop-hero .lead{position:relative;margin:0 auto 16px;max-width:960px;color:#34526a;opacity:.95;line-height:1.65}
 .badges{position:relative;display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:8px}
 .badge{padding:10px 14px;border-radius:999px;border:1px solid rgba(140,170,200,.45);background:linear-gradient(160deg,rgba(255,255,255,.85),rgba(255,255,255,.65));color:#1a4b8f;font-size:12px;backdrop-filter:blur(8px) saturate(150%)}
+@media (max-width:560px){.badge{font-size:11.5px}}
 
 /* ② 全球化网络 */
 .coop-global{position:relative;padding:24px 0 56px}
 .sec-head{margin:0 auto 16px;max-width:900px}
-.sec-head h2{margin:0 0 6px;font-size:26px;font-weight:800;letter-spacing:.4px;background:linear-gradient(90deg,#16406d,#2e7dff 55%,#6ec4ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sec-head h2{margin:0 0 6px;font-size:clamp(20px,4.8vw,26px);font-weight:800;letter-spacing:.4px;background:linear-gradient(90deg,#16406d,#2e7dff 55%,#6ec4ff);-webkit-background-clip:text;background-clip:text;color:transparent}
 .sec-head p{margin:0;color:#34526a}
 .world-bg{position:absolute;inset:0;background:
   radial-gradient(680px 300px at 50% 30%,rgba(56,140,225,.20),rgba(56,140,225,0) 70%),
@@ -365,12 +366,14 @@ function onGovLogoError(e: Event) {
 @media (max-width:1200px){.logo-wall{grid-template-columns:repeat(5,minmax(0,1fr))}}
 @media (max-width:900px){.logo-wall{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:600px){.logo-wall{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:380px){.logo-wall{grid-template-columns:1fr}}
 
 /* 政府 Logo 墙：桌面 5 列 */
 .logo-wall.gov{grid-template-columns:repeat(5,minmax(0,1fr))}
 @media (max-width:1200px){.logo-wall.gov{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media (max-width:900px){.logo-wall.gov{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:600px){.logo-wall.gov{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:380px){.logo-wall.gov{grid-template-columns:1fr}}
 
 /* ⑥ 园区场景 */
 .coop-park{padding:20px 0 56px}

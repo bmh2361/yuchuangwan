@@ -10,10 +10,7 @@
       <div class="keywords">
         <span class="chip" v-for="k in heroKeys" :key="k" v-reveal>{{ k }}</span>
       </div>
-      <div class="tags-cloud" aria-hidden="true">
-        <span class="strong">科技成果转化</span><span class="strong">产学研融合</span><span class="strong">知识产权</span>
-        <span class="strong">政策合规</span><span class="strong">标准化流程</span><span class="strong">制度建设</span>
-      </div>
+      <!-- 已移除 tags-cloud 标签，避免视觉拥挤 -->
     </section>
 
     <!-- 页内锚点导航 -->
@@ -26,10 +23,6 @@
         <p>政策层面已将科技成果转化上升为国家战略性产业。核心文件包括：</p>
       </div>
       <div class="docs">
-        <div class="doc-card" v-tilt>
-          <div class="icon">📄</div>
-          <h3>《中华人民共和国促进科技成果转化法》</h3>
-        </div>
         <div class="doc-card" v-tilt>
           <div class="icon">📄</div>
           <h3>《国家技术转移体系建设方案》</h3>
@@ -205,9 +198,9 @@ const heroKeys = ['科技成果转化法','技术转移体系建设方案','创�
   mask:linear-gradient(180deg,rgba(0,0,0,.0) 0%,rgba(0,0,0,.55) 55%,rgba(0,0,0,0) 100%);
   animation:heroGrid 36s linear infinite;opacity:.26}
 @keyframes heroGrid{0%{transform:translateY(0)}100%{transform:translateY(-60px)}}
-.policy-hero .title{position:relative;margin:0 0 16px;font-size:clamp(34px,5vw,52px);font-weight:800;letter-spacing:.4px;background:linear-gradient(95deg,#123153 0%,#195894 25%,#2373c8 48%,#2e7dff 65%,#55beff 82%,#9de9ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 6px 18px rgba(60,140,220,.25)) drop-shadow(0 2px 4px rgba(0,0,0,.22))}
-.policy-hero .lead{position:relative;margin:0 auto 16px;max-width:960px;color:#34526a;opacity:.95;line-height:1.65}
-.keywords{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:8px}
+.policy-hero .title{position:relative;margin:0 0 18px;font-size:clamp(34px,5vw,52px);font-weight:800;letter-spacing:.4px;background:linear-gradient(95deg,#123153 0%,#195894 25%,#2373c8 48%,#2e7dff 65%,#55beff 82%,#9de9ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 6px 18px rgba(60,140,220,.25)) drop-shadow(0 2px 4px rgba(0,0,0,.22))}
+.policy-hero .lead{position:relative;margin:0 auto 20px;max-width:960px;color:#34526a;opacity:.95;line-height:1.65}
+.keywords{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:16px}
 .chip{padding:8px 12px;border-radius:999px;border:1px solid rgba(140,170,200,.45);background:linear-gradient(160deg,rgba(255,255,255,.85),rgba(255,255,255,.65));color:#1a4b8f;font-size:12px;backdrop-filter:blur(8px) saturate(150%)}
 .tags-cloud{pointer-events:none;position:absolute;inset:0;display:flex;gap:12px;flex-wrap:wrap;justify-content:center;align-content:flex-end;padding:40px 20px 0}
 .tags-cloud span{color:#2a64a2;font-size:12px;border:1px dashed rgba(140,170,200,.45);border-radius:999px;padding:6px 10px;opacity:.8;background:linear-gradient(180deg,rgba(255,255,255,.90),rgba(255,255,255,.70))}
