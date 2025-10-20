@@ -95,6 +95,13 @@ const features = [
 .stat-card{background:linear-gradient(160deg,rgba(255,255,255,.82),rgba(245,250,255,.75) 55%,rgba(235,244,252,.78));border:1px solid rgba(170,200,228,.72);border-radius:18px;padding:18px 16px;text-align:center;box-shadow:0 6px 24px -10px rgba(40,90,150,.22),0 2px 10px -4px rgba(40,90,150,.16);transition:transform .35s ease, box-shadow .35s ease,border-color .35s ease;backdrop-filter:blur(6px) saturate(130%);}
 .stat-card .val{font-size:clamp(24px,6vw,32px);font-weight:700;line-height:1.05;background:linear-gradient(88deg,#15345c,#2e7dff 55%,#6ab9ff);background-clip:text;-webkit-background-clip:text;color:transparent;margin-bottom:6px;letter-spacing:.5px;}
 .stat-card .lab{font-size:11px;letter-spacing:.6px;color:#5a7794;text-transform:uppercase;}
+/* 英文版：确保标签一行显示并对齐 */
+.stat-card .lab{white-space:nowrap;}
+@media (max-width:560px){
+  .stat-card .lab{font-size:10px}
+}
+.stats{align-items:start}
+.stat-card{display:flex;flex-direction:column;justify-content:center}
 .stat-card:hover{transform:translateY(-6px);box-shadow:0 16px 40px -14px rgba(40,90,150,.30),0 8px 22px -10px rgba(40,90,150,.20);border-color:rgba(150,190,225,.95);}
 
 /* 核心服务网格 */

@@ -25,7 +25,7 @@
           </div>
         </div>
   <RouterLink to="/news">{{ t('nav.news') }}</RouterLink>
-  <RouterLink to="/faq">常见问题</RouterLink>
+  <RouterLink to="/faq">{{ t('nav.faq') }}</RouterLink>
   <RouterLink to="/contact">{{ t('nav.contact') }}</RouterLink>
       </nav>
       <!-- Mobile hamburger -->
@@ -54,8 +54,8 @@
           <button class="d-toggle" :aria-expanded="openAbout?'true':'false'" @click="openAbout=!openAbout" aria-label="Toggle About"></button>
         </div>
         <div class="d-sub" v-show="openAbout">
-          <RouterLink to="/industry-collab" @click="closeDrawer">产业合作</RouterLink>
-          <RouterLink to="/success-cases" @click="closeDrawer">成功案例</RouterLink>
+          <RouterLink to="/industry-collab" @click="closeDrawer">{{ t('nav.industryCollab') }}</RouterLink>
+          <RouterLink to="/success-cases" @click="closeDrawer">{{ t('nav.successCases') }}</RouterLink>
           <RouterLink to="/team" @click="closeDrawer">{{ t('nav.team') }}</RouterLink>
           <RouterLink to="/about-policy" @click="closeDrawer">{{ t('nav.policy') }}</RouterLink>
         </div>
@@ -77,11 +77,11 @@
       <div class="d-section">
         <div class="d-title no-toggle">
           <span class="d-ico" aria-hidden="true">📌</span>
-          <span>了解更多</span>
+          <span>{{ t('nav.more') }}</span>
         </div>
         <div class="d-sub show">
           <RouterLink to="/news" @click="closeDrawer">{{ t('nav.news') }}</RouterLink>
-          <RouterLink to="/faq" @click="closeDrawer">常见问题</RouterLink>
+          <RouterLink to="/faq" @click="closeDrawer">{{ t('nav.faq') }}</RouterLink>
           <RouterLink to="/contact" @click="closeDrawer">{{ t('nav.contact') }}</RouterLink>
         </div>
       </div>
